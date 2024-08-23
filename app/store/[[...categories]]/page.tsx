@@ -1,21 +1,15 @@
-"use client"
-import { FC } from "react"
-
 interface Props {
   params: {
-    categories: string[]
-  },
+    categories: string[],
+  }
   searchParams?: string
 }
 
-export const Categories: FC<Props> = ( props ) => {
-  const { params, searchParams } = props
-  console.log(params.categories)
-  console.log(searchParams)
-
-  return (
-    <main>
-      <h1>Categoría dinámica: { params.categories }</h1>
-    </main>
+export default function Category(props: Props){
+  console.log(props)
+  const { categories } = props.params
+  console.log(categories)
+  return(
+    <h1>Categoría dinámica: {categories}</h1>
   )
 }

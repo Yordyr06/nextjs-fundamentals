@@ -1,9 +1,8 @@
 "use client"
 import Link from "next/link";
+import { FC } from "react";
 
 export const Header = () => {
-  console.log("Header");
-
   return (
     <header>
       <nav>
