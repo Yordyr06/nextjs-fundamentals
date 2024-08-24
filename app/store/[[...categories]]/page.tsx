@@ -8,7 +8,7 @@ interface Props {
   searchParams?: string
 }
 
-export const Categories: FC<Props> = ( props ) => {
+export default function Categories( props: Props ) {
   const { params, searchParams } = props
   console.log(params.categories)
   console.log(searchParams)

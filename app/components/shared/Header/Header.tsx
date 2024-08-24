@@ -1,9 +1,8 @@
 "use client"
 import Link from "next/link";
+import { FC } from "react";
 
-export const Header = () => {
-  console.log("Header");
-
+export default function Header() {
   return (
     <header>
       <nav>
@@ -16,8 +15,8 @@ export const Header = () => {
             <li>Store</li>
           </Link>
           
-          <Link href="/category">
-            <li>Category</li>
+          <Link href="/store/categories">
+            <li>Categories</li>
           </Link>
         </ul>
       </nav>
