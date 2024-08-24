@@ -2,7 +2,7 @@
 import Link from "next/link";
 import { FC } from "react";
 
-export const Header = () => {
+export default function Header() {
   return (
     <header>
       <nav>
