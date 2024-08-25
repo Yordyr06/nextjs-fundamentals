@@ -11,6 +11,15 @@ const nextConfig = {
     includePaths: [join(__dirname, '/scss')],
     prependData: `@import "main.scss";`,
   },
+  
+  images: {
+    remotePatterns: [
+      {
+        hostname: 'cdn.shopify.com',
+        protocol: 'https',
+      }
+    ]
+  }
 };
 
 export default nextConfig;
