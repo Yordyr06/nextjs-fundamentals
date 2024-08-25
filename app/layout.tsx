@@ -1,9 +1,12 @@
-import { Inter } from "next/font/google";
+import { Roboto } from "next/font/google";
 import { Header } from "../components/shared/Header";
 import { Footer } from "app/components/shared/Footer";
 import "../scss/global.scss";
 
-const inter = Inter({ subsets: ["latin"] });
+const roboto = Roboto({ 
+  weight: ["100", "300", "500", "700"],
+  subsets: ["latin-ext"],
+});
 
 export default function RootLayout({
   children,
@@ -12,7 +15,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className={roboto.className}>
         <Header />
         {children}
         <Footer />
