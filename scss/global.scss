@@ -1,13 +1,18 @@
+@import "variables.scss";
+
 *, *::before, *::after {
   box-sizing: border-box
 }
 
 * {
-  margin: 0
+  margin: 0;
+  padding: 0;
 }
 
 body {
   line-height: 1.5;
+  background-color: $primary-color;
+  color: $text-color;
   -webkit-font-smoothing: antialiased;
 }
 
@@ -16,5 +21,5 @@ input, button, textarea, select {
 }  
 
 p, h1, h2, h3, h4, h5, h6 {
-  over-flow-wrap: break-word;
+  overflow-wrap: break-word;
 }
