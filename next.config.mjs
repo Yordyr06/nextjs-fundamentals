@@ -8,8 +8,8 @@ const __dirname = dirname(__filename);
 
 const nextConfig = {
   sassOptions: {
-    includePaths: [join(__dirname, '/sass')],
-    prependData: `@import "main.sass"`,
+    includePaths: [join(__dirname, '/scss')],
+    prependData: `@import "main.scss";`,
   },
 };
 

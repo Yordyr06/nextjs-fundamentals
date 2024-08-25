@@ -1,18 +1,22 @@
-"use client"
 import Link from "next/link";
+import styles from "./styles.module.scss"
 
 export const Header = () => {
   return (
     <header>
       <nav>
-        <ul>
-          <Link href="/">
-            <li>Home</li>
-          </Link>
+        <ul className={styles.Header__list} >
+          <li>
+            <Link href="/">
+              Home
+            </Link>
+          </li>
 
-          <Link href="/store">
-            <li>Store</li>
-          </Link>
+          <li>
+            <Link href="/store">
+              Store
+            </Link>
+          </li>
         </ul>
       </nav>
     </header>
