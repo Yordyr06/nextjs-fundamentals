@@ -1,5 +1,4 @@
 "use client"
-import { FC } from "react"
 
 interface Props {
   params: {
@@ -8,10 +7,8 @@ interface Props {
   searchParams?: string
 }
 
-export default function Categories( props: Props ) {
+const Categories = ( props: Props ) => {
   const { params, searchParams } = props
-  console.log(params.categories)
-  console.log(searchParams)
 
   return (
     <main>
@@ -19,3 +16,5 @@ export default function Categories( props: Props ) {
     </main>
   )
 }
+
+export default Categories
