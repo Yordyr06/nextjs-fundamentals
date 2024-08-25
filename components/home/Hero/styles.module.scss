@@ -1,5 +1,5 @@
 .Hero {
-  h1 {
+  & > h1 {
     background-image: $gradient;
     background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -10,7 +10,7 @@
     text-align: center;
   }
 
-  h2 {
+  & > h2 {
     font-size: 2rem;
     margin: 0 0 3rem 0;
     text-align: center;
