@@ -41,7 +41,7 @@ const getProducts = async (): Promise<Product[]> => {
   try {
     const url = `${process.env.NEXT_PUBLIC_SHOPIFY_HOSTNAME}/admin/api/2023-10/products.json`
     const key = process.env.NEXT_PUBLIC_SHOPIFY_API_KEY
-    console.log({url, key})
+    // console.log({url, key})
 
     const response = await fetch(url, {
       headers: new Headers ({
@@ -50,15 +50,15 @@ const getProducts = async (): Promise<Product[]> => {
     })
 
 
-    console.log(response)
+    // console.log(response)
 
     const data = await response.json()
 
-    console.log(data)
+    // console.log(data)
 
     return data.products
   } catch (error) {
-    console.error(`Error: ${error}`)
+    // console.error(`Error: ${error}`)
     return []
   }
 }
@@ -68,7 +68,7 @@ export const MainProducts = () => {
   useEffect(() => {
     const fetchProducts = async () => {
       const products = await getProducts()
-      setProducts(products)
+      // setProducts(products)
     }
 
     fetchProducts()
